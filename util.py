@@ -49,6 +49,8 @@ def predict_sales(item_ide2,item_weight,item_visibility,item_mrp,out_ide,out_age
 
     return round(np.exp(_model.predict(_scaling.transform([input_data])))[0],2)
 
+def show_feature_names():
+    return features
 
 read_artifacts()
 #print(features)
